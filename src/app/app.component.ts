@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  public flag : boolean ;
+
+  constructor() {
+    this.flag = true;
+  }
+
+  toggleFlag(flag)
+  {
+     this.flag = flag;
+  }
 }
