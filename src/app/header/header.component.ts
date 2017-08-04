@@ -7,7 +7,7 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output('toggleComponenet') flag : EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() flag : EventEmitter<boolean> = new EventEmitter<boolean>();
   
   result : boolean ;
 
@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  public OnToggleflag()
+  OnToggleflag()
   {
        this.result = !this.result;
        this.flag.emit(this.result);

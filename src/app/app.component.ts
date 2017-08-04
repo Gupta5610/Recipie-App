@@ -15,6 +15,7 @@ export class AppComponent {
 
   toggleFlag(flag)
   {
+    console.log("toggle flag = "+flag);
      this.flag = flag;
   }
 }
